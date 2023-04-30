@@ -14,8 +14,8 @@
         <nav>
             <div class="nav-main">
                 <a href="index.html"><img src="images/logo.png" alt="logo warsztatu"/> </a>
-                <div class="nav-links">
-                    <i class="fa fa-times" style="font-size: 30px;"></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" style="font-size: 30px;" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href=""> Główna </a></li>
                         <li><a href=""> Serwis </a></li>
@@ -24,11 +24,13 @@
                         <li><a href=""> Kontakt </a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" ></i>
-                <div class="nav-hours">
-                    <a> Godziny otwarcia:</a>
-                    <br>
-                    <a> Pon - Pt: 8:00 - 18:00  Sobota: 8:00 - 14:00</a>
+                <div class="nav-right">
+                    <i class="fa fa-bars" style="margin-left: 70%; padding: 15px; font-size: 30px;"  onclick="showMenu()" ></i>
+                    <div class="nav-hours">
+                        <a class="inline-block-links"> Godziny otwarcia:</a>
+                        <br>
+                        <a class="inline-block-links"> Pon - Pt: 8:00 - 18:00  Sobota: 8:00 - 14:00</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -43,9 +45,49 @@
             </p>
         </div>
     </section>
-    <div class="main-peugot">
-        <img src="images/peugot-wide.png" width="100%" alt="logo warsztatu"/>
-    </div>
+    <section class="services">
+        <h1> Nasze usługi:</h1>
+        <p> zapoznaj się z naszą ofertą i wybierz to czego potrzebujesz</p>
 
+        <div class="row">
+            <div class="service-col" onclick="myhref('http://google.com');" >
+                <img class="service-image"src="images/service_icon_1.png" alt="serwis samochodowy"/>
+                <h3> Serwis samochodowy</h3>
+            </div>
+            <div class="service-col" onclick="myhref('http://google.com');" >
+                <img class="service-image"src="images/service_icon_1.png" alt="Stacja kontroli pojazdów"/>
+                <h3> Stacja kontroli pojazdów </h3>
+            </div>
+            <div class="service-col" onclick="myhref('http://google.com');" >
+                <img class="service-image"src="images/service_icon_1.png" alt="Obsługa szkód komunikacyjnych"/>
+                <h3> Obsługa szkód komunikacyjnych </h3>
+            </div>
+            <div class="service-col" onclick="myhref('http://google.com');" >
+                <img class="service-image"src="images/service_icon_1.png" alt="serwis klimatyzacji"/>
+                <h3> Serwis klimatyzacji</h3>
+            </div>
+            <div class="service-col">
+                <img class="service-image"src="images/service_icon_1.png" alt="serwis opon"/>
+                <h3> Serwis opon</h3>
+            </div>
+        </div>
+
+        <div class="main-peugot">
+            <img src="images/peugot-wide.png" width="100%" alt="logo warsztatu"/>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        };
+        function hideMenu(){
+            navLinks.style.right = "-600px";
+        };
+        function myhref(web){
+            window.location.href = web;}
+    </script>
 </body>
 </html>
