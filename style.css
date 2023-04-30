@@ -4,6 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ------------Navbar------------ */
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -135,6 +137,9 @@ nav .fa{
         margin-top: 0px;
     }
 }
+
+/* ------------Services------------ */
+
 .services{
     width: 80%;
     margin: auto;
@@ -156,6 +161,7 @@ p{
     margin-top: 3%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .service-col{
     flex-basis: 18%;
@@ -198,3 +204,40 @@ h3{
 .main-peugot{
     width: 100%;
 }
+
+/* ------------OUR-WORK------------ */
+
+.our-work{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.galerry-col{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    position: relative;
+}
+.galerry-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+}
+.overlay{
+    background: rgba(95, 160, 234, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+@media (max-width: 700px) {
+    .galerry-col {
+      flex: 40%;
+      max-width: 50%;
+    }
+}
+  
