@@ -133,7 +133,7 @@ nav .fa{
     }
     .nav-hours{
         position: relative;
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 0px;
     }
 }
@@ -239,5 +239,43 @@ h3{
       flex: 40%;
       max-width: 50%;
     }
+    .our-work h1{
+        font-size: 26px;
+    }
 }
-  
+.ctu{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(82, 82, 82, 0.7),rgba(0,0,0,0.7)),url(images/dashboard-call.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 20px;
+    text-align: center;
+}
+.ctu h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #2d72eb;
+    background: #2d72eb;
+    transition: 1s;
+}
+@media (max-width:700px) {
+    .ctu h1{
+        font-size: 22px;
+    }
+}
