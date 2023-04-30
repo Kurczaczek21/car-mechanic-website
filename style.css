@@ -279,3 +279,12 @@ h3{
         font-size: 22px;
     }
 }
+.footer-col{
+    flex-basis: 31%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+#footerRow{
+    background-color: #d6e7fb;
+}
