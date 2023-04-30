@@ -87,6 +87,9 @@ nav .fa{
   }
 
 @media (max-width: 700px) {
+    .text-box{
+        top: 60%;
+    }
     nav{
         position: static;
     }
@@ -124,12 +127,12 @@ nav .fa{
         padding: 5px;
     }
     .nav-right{
-        margin-right: 3px;
+        margin-right: 10px;
     }
     .nav-hours{
         position: relative;
         font-size: 10px;
-        margin-top: 38px;
+        margin-top: 0px;
     }
 }
 .services{
@@ -154,10 +157,6 @@ p{
     display: flex;
     justify-content: space-between;
 }
-/* .row a{
-    margin: 0;
-    padding: 0;
-} */
 .service-col{
     flex-basis: 18%;
     background: #d6e7fb;
@@ -178,6 +177,23 @@ h3{
 }
 .service-image{
     width: 45%;
+}
+@media (max-width:700px) {
+    .row{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .service-col{
+        width: 40%;
+        flex-basis: 48%;
+
+    }
+    h3{
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 15px;
+    }
 }
 .main-peugot{
     width: 100%;
