@@ -3,6 +3,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* ------------Navbar------------ */
 
@@ -43,7 +47,6 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    overflow: hidden;
 }
 .nav-links ul li a{
     color: white;
@@ -51,30 +54,31 @@ nav img{
     font-size: 20px;
 }
 .nav-links ul li ul {
-    top: 42px;
-    left: -45px;
+    top: 48px;
+    left: -113px;
     position: absolute;
-    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-1em);
+    z-index: 1;
+    transition: all 0.1s ease 0s, visability 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.nav-links ul li:focus ul,
+.nav-links ul li:focus-within ul,
+.nav-links ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s,0s,0.3s;
 }
 .sub-list-a{
     cursor: pointer;
 }
 .nav-links ul li ul li{
-    width: 150px;
+    width: 300px;
     margin-top: 0;
-    position:relative;
-    top: -50vh;
-    transition: 1s;
     background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(3, 26, 52, 0.7)),url();
-}
-.nav-links ul li:hover ul li {
-    top: 0;
-}
-.nav-links ul:hover li {
-    overflow: visible;
-}
-.nav-links ul li:hover ul {
-    display: block;
 }
 .nav-links ul li::after{
     content: '';
@@ -148,10 +152,6 @@ nav .fa{
         display: block;
         color: white;
     }
-    /* .nav-links ul li{   
-    margin-top: 10px;
-    list-style: none;
-    } */
     .nav-links ul {   
         padding: 5px;
     }
@@ -162,6 +162,9 @@ nav .fa{
         position: relative;
         font-size: 12px;
         margin-top: 0px;
+    }
+    .nav-links ul li ul {
+        display: none;
     }
 }
 
@@ -213,6 +216,7 @@ h3{
 }
 @media (max-width:700px) {
     .row{
+        margin-top: 1px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -389,4 +393,15 @@ h3{
     .car-service-col p{
         font-size: 15px;
     }
+}
+
+/* ------------SKP----------- */
+
+.skp-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(148, 175, 239, 0.7),rgba(4,9,30,0.7)),url(images/skp.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
