@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 0% 2%;
-    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(25, 128, 247, 0.7)),url();
+    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(3, 26, 52, 0.7)),url();
 }
 .nav-hours{
     margin-top: 10px;
@@ -51,20 +51,20 @@ nav img{
 }
 .nav-links ul li ul {
     top: 42px;
-    left: -30px;
-    /* background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(4,9,30,0.7)),url(); */
+    left: -45px;
     position: absolute;
     overflow: hidden;
-    transition: all 1s linear;
-    /* display: none; */
+}
+.sub-list-a{
+    cursor: pointer;
 }
 .nav-links ul li ul li{
+    width: 150px;
     margin-top: 0;
-    /* display:none; */
     position:relative;
     top: -50vh;
     transition: 1s;
-    background: linear-gradient(rgba(25, 128, 247, 0.7),rgba(25, 128, 247, 0.7));
+    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(3, 26, 52, 0.7)),url();
 }
 .nav-links ul li:hover ul li {
     top: 0;
@@ -225,6 +225,7 @@ h3{
     }
 }
 .main-peugot{
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -324,15 +325,16 @@ h3{
 }
 .car-service{
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-top: 10px;
 }
 .car-service-col{
     flex-basis: 30%, 50%;
     background: #d6e7fb;
     border-radius: 10px;
     margin: 2%;
+    margin-top: 30px;
     padding: 10px 10px;
     box-sizing: border-box;
     transition: 0.5s;
