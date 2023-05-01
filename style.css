@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 0% 2%;
-    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(4,9,30,0.7)),url();
+    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(25, 128, 247, 0.7)),url();
 }
 .nav-hours{
     margin-top: 10px;
@@ -52,19 +52,24 @@ nav img{
 .nav-links ul li ul {
     top: 42px;
     left: -30px;
-    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(4,9,30,0.7)),url();
+    /* background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(4,9,30,0.7)),url(); */
     position: absolute;
-    transition: 3s;
+    overflow: hidden;
+    transition: all 1s linear;
+    /* display: none; */
 }
 .nav-links ul li ul li{
     margin-top: 0;
-    display:none;
+    /* display:none; */
     position:relative;
+    top: -50vh;
+    transition: 1s;
+    background: linear-gradient(rgba(25, 128, 247, 0.7),rgba(25, 128, 247, 0.7));
 }
 .nav-links ul li:hover ul li {
-    display: block;
+    top: 0;
 }
-.nav-links ul li:hover ul li a{
+.nav-links ul li:hover ul {
     display: block;
 }
 .nav-links ul li::after{
