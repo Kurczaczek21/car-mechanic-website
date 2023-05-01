@@ -43,6 +43,7 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    overflow: hidden;
 }
 .nav-links ul li a{
     color: white;
@@ -68,6 +69,9 @@ nav img{
 }
 .nav-links ul li:hover ul li {
     top: 0;
+}
+.nav-links ul:hover li {
+    overflow: visible;
 }
 .nav-links ul li:hover ul {
     display: block;
@@ -227,6 +231,13 @@ h3{
 .main-peugot{
     margin-top: 50px;
     width: 100%;
+}
+@media (max-width: 700px) {
+    .main-peugot{
+        margin-top: 0px;
+        width: 100%;
+        left: -200;
+    }
 }
 
 /* ------------OUR-WORK------------ */
