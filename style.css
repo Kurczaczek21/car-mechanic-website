@@ -49,6 +49,24 @@ nav img{
     text-decoration: none;
     font-size: 20px;
 }
+.nav-links ul li ul {
+    top: 42px;
+    left: -30px;
+    background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(4,9,30,0.7)),url();
+    position: absolute;
+    transition: 3s;
+}
+.nav-links ul li ul li{
+    margin-top: 0;
+    display:none;
+    position:relative;
+}
+.nav-links ul li:hover ul li {
+    display: block;
+}
+.nav-links ul li:hover ul li a{
+    display: block;
+}
 .nav-links ul li::after{
     content: '';
     width: 0%;
