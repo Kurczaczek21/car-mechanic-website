@@ -42,6 +42,7 @@ nav img{
     text-align: center;
 }
 .nav-links ul li{
+    z-index: 5;
     margin-top: 40px;
     list-style: none;
     display: inline-block;
