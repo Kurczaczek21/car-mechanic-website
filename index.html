@@ -21,10 +21,10 @@
                         <li><a href="/"> Główna </a></li>
                         <li><a href="/pages/serwis.html"> Serwis </a>
                             <ul>
-                                <li><a class="sub-list-a" href="serwis.html#mechanika"> Mechanika </a></li>
-                                <li><a class="sub-list-a" href="serwis.html#lakiernik">Usługi blacharsko-lakiernicze</a></li>
-                                <li><a class="sub-list-a" href="serwis.html#wulkanizacja">Wulkanizacja</a></li>
-                                <li><a class="sub-list-a" href="serwis.html#klimatyzacja">Serwis klimatyzacji</a></li>
+                                <li><a class="sub-list-a" href="/pages/serwis.html#mechanika"> Mechanika </a></li>
+                                <li><a class="sub-list-a" href="/pages/serwis.html#wulkanizacja">Wulkanizacja</a></li>
+                                <li><a class="sub-list-a" href="/pages/serwis.html#lakiernik">Usługi blacharsko-lakiernicze</a></li>
+                                <li><a class="sub-list-a" href="/pages/serwis.html#klimatyzacja">Serwis klimatyzacji</a></li>
                             </ul>
                         </li>
                         <li><a href="/pages/skp.html"> Stacja kontroli pojazdów </a></li>
@@ -58,19 +58,19 @@
         <p> zapoznaj się z naszą ofertą i wybierz to czego potrzebujesz</p>
 
         <div class="row">
-            <a href="/pages/serwis.html"><div class="service-col" onclick="myhref('http://google.com');" >
+            <a href="/pages/serwis.html"><div class="service-col" >
                 <img class="service-image"src="images/service_icon_1.png" loading="lazy" alt="serwis samochodowy"/>
                 <h3> Serwis samochodowy</h3>
             </div></a>
-            <a href="/pages/skp.html"><div class="service-col" onclick="myhref('http://google.com');" >
+            <a href="/pages/skp.html"><div class="service-col" >
                 <img class="service-image"src="images/service_icon_1.png" loading="lazy" alt="Stacja kontroli pojazdów"/>
                 <h3> Stacja kontroli pojazdów </h3>
             </div></a>
-            <a href="/pages/osk.html"><div class="service-col" onclick="myhref('http://google.com');" >
+            <a href="/pages/osk.html"><div class="service-col" >
                 <img class="service-image"src="images/service_icon_1.png" loading="lazy" alt="Obsługa szkód komunikacyjnych"/>
                 <h3> Obsługa szkód komunikacyjnych </h3>
             </div></a>
-            <a><div class="service-col" onclick="myhref('http://google.com');" >
+            <a><div class="service-col" >
                 <img class="service-image"src="images/service_icon_1.png" loading="lazy" alt="serwis klimatyzacji"/>
                 <h3> Serwis klimatyzacji</h3>
             </div></a>
@@ -149,8 +149,6 @@
         function hideMenu(){
             navLinks.style.right = "-600px";
         };
-        function myhref(web){
-            window.location.href = web;}
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
