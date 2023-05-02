@@ -21,10 +21,10 @@
                         <li><a href="../index.html"> Główna </a></li>
                         <li><a href="serwis.html"> Serwis </a>
                             <ul>
-                                <li><a class="sub-list-a" onclick="window.location.href='serwis.html#mechanika';"> Mechanika </a></li>
-                                <li><a class="sub-list-a" onclick="window.location.href='serwis.html#lakiernik';">Usługi blacharsko-lakiernicze</a></li>
-                                <li><a class="sub-list-a" onclick="window.location.href='serwis.html#wulkanizacja';">Wulkanizacja</a></li>
-                                <li><a class="sub-list-a" onclick="window.location.href='serwis.html#klimatyzacja';">Serwis klimatyzacji</a></li>
+                                <li><a class="sub-list-a" href="serwis.html#mechanika"> Mechanika </a></li>
+                                <li><a class="sub-list-a" href="serwis.html#lakiernik">Usługi blacharsko-lakiernicze</a></li>
+                                <li><a class="sub-list-a" href="serwis.html#wulkanizacja">Wulkanizacja</a></li>
+                                <li><a class="sub-list-a" href="serwis.html#klimatyzacja">Serwis klimatyzacji</a></li>
                             </ul>
                         </li>
                         <li><a href="skp.html"> Stacja kontroli pojazdów </a></li>
@@ -54,32 +54,128 @@
         </div>
     </section>
     <section class="skp-details">
-        <h1> WORK IN PROGRESS !!!!!!!!!</h1>
-        <div class="skp-row">
-            <div class="skp-col">
-                <p>Stacja Kontroli pojazdów do 3.5t</p>
-                <p>Godziny otwarcia: <br> Pon-Pt: 8:00 - 18:00 <br> Sob: 8:00 - 14:00</p>
-                <p>tel: +48 536 503 503</p>
-            </div>
-            <div class="skp-col">
-                <img src="/images/serwis_bg.png">
+        <div class="bg-car">
+            <img src="/images/police.png" id="police">
+        </div>
+
+        <div class="skp-interactive">
+            <h2> Sprawdź jak wygląda nasza stacja</h2>
+            <div class="skp-wrap">
+                <div class="skp-dot skp-dot-1">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Tu mamy takie lustro ze kobieta tez moze przyjechac XD
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-2">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Trzepiemy autem na lewo i prawo
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-3">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Patrzymy od spodu XD
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-4">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Hamujemy szybko
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-5">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Swiatelka sie swieca
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-6">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Tu taki super komputer z nasa
+                    </div>
+                </div>
+                <div class="skp-dot skp-dot-7">
+                    <i class="fa fa-circle-o"></i>
+                    <div class='dot-content'>
+                        Certyfikat stacji bo nie oszukujemy
+                    </div>
+                </div>
             </div>
         </div>
         <div class="skp-row">
             <div class="skp-col">
                 <h3>Nasza stacja:</h3>
+                <p>Stacja Kontroli pojazdów do 3.5t</p>
+                <p>Godziny otwarcia: <br> Pon-Pt: 8:00 - 18:00 <br> Sob: 8:00 - 14:00</p>
+                <p>tel: +48 536 503 503</p>
                 <p>Coś o geomerti stacji itd</p>
                 <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
                     It has survived not only five centuries, but also the leap into electronic typesetting, <br>
                 </p>
+                <h3> wiem ze ten tekst tu nie ladny ale to sie z toba musze dogaddac juz jak to chcesz aby wygladalo <br> bo zrobilem inaczej niz w requescie co dales bo byl tragiczny XD</h3>
             </div>
             <div class="skp-col">
-                <h3> Cennik SKP</h3>
-                <p>tu <br>jakas <br> tabelka</p>
-                <p>OGOLNIE TANIO I DOBRZE WIEC ZAPRASZAMY!</p>
+                <img src="/images/skp-outside.png">
             </div>
+        </div>
+        <div class="skp-row">
+            <div class="skp-cennik-col">
+                <h2> Cennik </h2>
+                
+                <table class="cennik-skp">
+                    <tr id="cennik-skp-header">
+                      <th>Kategoria pojazdu</th>
+                      <th>Cena opłaty rocznej</th>
+                    </tr>
+                    <tr>
+                      <td>motocykl, ciągnik rolniczy</td>
+                      <td>62,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>samochód osobowy, autobus przeznaczony do przewozu nie więcej niż 15 osób łącznie z kierowcą, samochód ciężarowy i specjalny do 3,5 t d.m.c.,pojazd trójkołowy powyżej 0,4 m.w.(1)</td>
+                      <td>98,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>samochód ciężarowy i specjalny, ciągnik samochodowy siodłowy powyżej 3.5 t do 16 t d.m.c.</td>
+                      <td>153,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>samochód ciężarowy i specjalny, ciągnik samochodowy siodłowy powyżej 16 t d.m.c.,ciągnik samochodowy balastowy</td>
+                      <td>176,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>autobus przeznaczony do przewozu więcej niż 15 osób łącznie z kierowcą</td>
+                      <td>199,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>przyczepa ciężarowa rolnicza do 1,5 t d.m.c.</td>
+                      <td>40,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>przyczepa ciężarowa rolnicza powyżej 1,5 t do 6 t d.m.c.</td>
+                      <td>50,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>przyczepa ciężarowa rolnicza powyżej 6 t d.m.c.</td>
+                      <td>70,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>przyczepa (naczepa) ciężarowa i specjalna do 3,5 t d.m.c.</td>
+                      <td>78,00 zł</td>
+                    </tr>
+                    <tr>
+                      <td>przyczepa (naczepa) ciężarowa i specjalna powyżej 3,5 t d.m.c. do 16 t d.m.c.</td>
+                      <td>163,00 zł</td>
+                    </tr>
+                </table>
+                <p>OGÓLNIE TANIO I DOBRZE WIĘC ZAPRASZAMY!</p>
+            </div>
+                
         </div>
 
         <div class="main-peugot">
@@ -87,35 +183,6 @@
         </div>
     </section>
 
-    <section class="our-work">
-        <h1> Zobacz jak pracujemy!</h1>
-
-        <div class="row">
-            <div class="galerry-col">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <!-- <div class="overlay">
-                    <div class="text">Hello World</div>
-                </div> -->
-                <img src="../images/galerry_img2.png" loading="lazy">
-                <img src="../images/galerry_img3.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img4.png" loading="lazy">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <img src="../images/galerry_img2.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <img src="../images/galerry_img3.png" loading="lazy">
-                <img src="../images/galerry_img4.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img3.png" loading="lazy">
-                <img src="../images/galerry_img2.png" loading="lazy">
-                <img src="../images/galerry_img1.png" loading="lazy">
-              </div>
-        </div>
-    </section>
     <section class="ctu">
         <h1> Zaufaj profesjonalistom - naprawy samochodowe z dośwaidczonym personelem <br> Nie czekaj na kolejne usterki, umów się już teraz </h1>
         <a href="" class="button">KONTAKT</a>
@@ -151,8 +218,11 @@
         function hideMenu(){
             navLinks.style.right = "-600px";
         };
-        function myhref(web){
-            window.location.href = web;}
+        let bg_car = document.getElementById("police");
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            bg_car.style.right = (value*1.5)-1500+'px';
+        })
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>

@@ -54,7 +54,7 @@ nav img{
     font-size: 20px;
 }
 .nav-links ul li ul {
-    top: 48px;
+    top: 45px;
     left: -113px;
     position: absolute;
     visibility: hidden;
@@ -76,6 +76,7 @@ nav img{
     cursor: pointer;
 }
 .nav-links ul li ul li{
+    border-radius: 10px;
     width: 300px;
     margin-top: 0;
     background-image: linear-gradient(rgba(25, 128, 247, 0.7),rgba(3, 26, 52, 0.7)),url();
@@ -416,19 +417,158 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 .skp-row{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .skp-col{
-    height: 100%;
     width: 100%;
     flex-basis: 48%;
-    border-style: inset;
+    background-color: #d6e7fb;
     border-radius: 10px;
-    margin: 5%;
+    margin: 1%;
     padding: 20px 12px;
     box-sizing: border-box;
+}
+.skp-col p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.skp-col h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.skp-col img{
+    width: 100%;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+    /* max-height: 500px; */
+}
+.skp-wrap{
+    background: url(/images/skp-details.png) center no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+}
+.skp-dot:hover .dot-content{
+    display: block !important;;
+}
+.dot-content{
+    background: rgba(43, 97, 224, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(250, 249, 249, 0.84);
+    min-width: 150px;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    /* left: -200%;
+    top: 10px; */
+}
+.skp-dot:hover{
+    background: rgba(241, 238, 238, 0.84);
+    font-size: 110%;
+    color: rgba(10, 94, 203, 0.925);
+    box-shadow: 1px 1px 10px 4px rgba(10, 94, 203, 0.925);
+}
+.skp-dot{
+    background: rgba(10, 94, 203, 0.925);
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    color: white;
+    font-size: 110%;
+    box-shadow: 1px 1px 10px 4px rgb(255, 255, 255);
+}
+.skp-dot-1{
+    top: 350px;
+    left: 800px;
+}
+.skp-dot-2{
+    top: 640px;
+    left: 500px;
+}
+.skp-dot-3{
+    top: 460px;
+    left: 650px;
+}
+.skp-dot-4{
+    top: 510px;
+    left: 320px;
+}
+.skp-dot-5{
+    top: 300px;
+    left: 960px;
+}
+.skp-dot-6{
+    top: 220px;
+    left: 430px;
+}
+.skp-dot-7{
+    top: 210px;
+    left: 120px;
+}
+.fa-circle-o{
+    top: 12px;
+}
+.skp-interactive{
+    margin-top: 50px;
+    background: #d6e7fb;
+    border-radius: 30px;
+}
+.skp-interactive h2{
+    color: black;
+    padding: 20px;
+    font-size: 36px;
+}
+#cennik-skp-header{
+    background-color: #006bf7c9;
+}
+.cennik-skp tr:nth-child(even) {
+    background: rgba(90, 159, 239, 0.925);
+}
+.cennik-skp tr:nth-child(odd) {
+    background: rgba(123, 178, 241, 0.925);
+}
+.skp-cennik-col{
+    width: 100%;
+    background-color: #d6e7fb;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.skp-cennik-col h2{
+    font-size: 40px;
+    padding: 10px;
+}
+.skp-cennik-col p{
+    font-size: 20px;
+    margin: 12px;
+}
+.bg-car{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-car img{
+    position: absolute;
+    object-fit: cover;
 }
