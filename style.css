@@ -304,7 +304,7 @@ h3{
     padding: 100px 20px;
     text-align: center;
 }
-.ctu h1{
+.ctu h2{
     color: white;
     margin-bottom: 40px;
     padding: 0;
@@ -391,7 +391,6 @@ h3{
     .row{
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 80px;
     }
     .car-service-col{
         width: 100%;
@@ -636,6 +635,9 @@ h3{
     .bg-car{
         right: 0px;
     }
+    h2{
+        font-size: 19px;
+    }
 }
 
 /* -----------------------OSK---------------------- */
@@ -732,7 +734,8 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #30a6e6;
 }
-.container {
+.contact-form {
+    margin-top: 40px;
     border-radius: 5px;
     background-color: #d6e7fb;
     padding: 20px;
