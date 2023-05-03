@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="header">
+    <section class="contact-header">
         <nav>
             <div class="nav-main">
                 <a href="../index.html"><img src="../images/logo.png" loading="lazy" alt="logo warsztatu"/> </a>
@@ -53,67 +53,77 @@
             </p>
         </div>
     </section>
-    <section class="services">
-        <h1> Nasze usługi:</h1>
-        <p> zapoznaj się z naszą ofertą i wybierz to czego potrzebujesz</p>
+    <section class="contact-info">
+        <h1> Skontaktuj się z nami</h1>
 
-        <div class="row">
-            <div class="service-col" onclick="myhref('http://google.com');" >
-                <img class="service-image"src="../images/service_icon_1.png" loading="lazy" alt="serwis samochodowy"/>
-                <h3> Serwis samochodowy</h3>
+        <div class="row" id="footerRow">
+            <div class="footer-col" >
+                <h3> Dane kontaktowe </h3>
+                <p><i class="fa fa-map-marker" ></i> Auto-Usługi Kmita <br> ul.Jurajska 94a <br> 32-095 Iwanowice Dworskie</p>
+                <p><i class="fa fa-phone" ></i> tel. serwis: <br> +48 502 594 527</p>
+                <p><i class="fa fa-phone" ></i> tel. stacja kontroli pojazdów: <br> +48 536 503 503</p>
+                <p><i class="fa fa-envelope"></i></i> email: <br>example_email@kmita.pog</p>
             </div>
-            <div class="service-col" onclick="myhref('http://google.com');" >
-                <img class="service-image"src="../images/service_icon_1.png" loading="lazy" alt="Stacja kontroli pojazdów"/>
-                <h3> Stacja kontroli pojazdów </h3>
+            <div class="footer-col">
+                <h3> Godziny otwarcia </h3>
+                <p><i class="fa fa-cogs"></i> Serwis <br> Pon-Pt: 8:00 - 16:00 <br> Sobota: 8:00 - 14:00</p>
+                <p><i class="fa fa-tachometer"></i> Stacja Diagnostyczna <br> Pon-Pt: 8:00 - 18:00 <br> Sobota: 8:00 - 14:00</p>
             </div>
-            <div class="service-col" onclick="myhref('http://google.com');" >
-                <img class="service-image"src="../images/service_icon_1.png" loading="lazy" alt="Obsługa szkód komunikacyjnych"/>
-                <h3> Obsługa szkód komunikacyjnych </h3>
-            </div>
-            <div class="service-col" onclick="myhref('http://google.com');" >
-                <img class="service-image"src="../images/service_icon_1.png" loading="lazy" alt="serwis klimatyzacji"/>
-                <h3> Serwis klimatyzacji</h3>
-            </div>
-            <div class="service-col" >
-                <img class="service-image"src="../images/service_icon_1.png" loading="lazy" alt="serwis opon"/>
-                <h3> Serwis opon</h3>
+            <div class="footer-col">
+                <h3> Konto bankowe </h3>
+                <p><i class="fa fa-credit-card-alt"></i> Numer konta: <br> 439439429402934023942394320 </p>
+                <p><i class="fa fa-building"></i> Numer NIP: <br> 8439992478 </p>
             </div>
         </div>
+        <div class="map-row">
+            <h3> Jak do nas dojechać: </h3>
+            <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.2258874808736!2d19.97619131272028!3d50.21299917142926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471653f4fdb4a8c9%3A0xa5e8c1357ab495b4!2sAuto-Us%C5%82ugi%20Kmita%20Andrzej!5e0!3m2!1sen!2spl!4v1682883468856!5m2!1sen!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+        </div>
+    </section>
+    <section class="contact">
+        <h1> Napisz nam waidomość</h1>
+        <div class="container">
+            <form action="https://formsubmit.co/warzecha.mati@gmail.com" method="POST">
+
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Twoję Imię i Nazwisko.." required>
+
+            <label for="phone">Numer telefonu</label>
+            <br>
+            <small>Format: 123-456-789</small>
+            <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu.." pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+
+            <br>
+            <label for="email">Adres email</label>
+            <input type="email" id="phone" name="email" placeholder="Twój adres email.." required>
+
+            <br>
+            <label for="country">Rodzaj zgłoszenia</label>
+            <select id="country" name="case">
+                <option value="accident">Wypadek</option>
+                <option value="price">Pytanie o cene </option>
+                <option value="animal">Zwierze na drodze</option>
+                <option value="drift">Drift</option>
+                <option value="other">Inne</option>
+            </select>
+          
+            <label for="subject">Treść</label>
+            <textarea id="subject" name="subject" placeholder="Tu napisz swoją wiadomość.." style="height:200px" required></textarea>
+
+            <!-- <input type="file" id="msg-image" name="msg-image" accept="image/png, image/jpeg"> -->
+
+            <br>
+            <input type="submit" value="Wyślij">
+          
+            </form>
+          </div>
 
         <div class="main-peugot">
             <img src="../images/peugot-wide.png" width="100%" alt="logo warsztatu" loading="lazy"/>
         </div>
     </section>
 
-    <section class="our-work">
-        <h1> Zobacz jak pracujemy!</h1>
-
-        <div class="row">
-            <div class="galerry-col">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <!-- <div class="overlay">
-                    <div class="text">Hello World</div>
-                </div> -->
-                <img src="../images/galerry_img2.png" loading="lazy">
-                <img src="../images/galerry_img3.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img4.png" loading="lazy">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <img src="../images/galerry_img2.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img1.png" loading="lazy">
-                <img src="../images/galerry_img3.png" loading="lazy">
-                <img src="../images/galerry_img4.png" loading="lazy">
-              </div>
-              <div class="galerry-col">
-                <img src="../images/galerry_img3.png" loading="lazy">
-                <img src="../images/galerry_img2.png" loading="lazy">
-                <img src="../images/galerry_img1.png" loading="lazy">
-              </div>
-        </div>
-    </section>
+    
     <section class="ctu">
         <h1> Zaufaj profesjonalistom - naprawy samochodowe z dośwaidczonym personelem <br> Nie czekaj na kolejne usterki, umów się już teraz </h1>
         <a href="" class="button">KONTAKT</a>

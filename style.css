@@ -174,7 +174,7 @@ nav .fa{
 /* ------------Services------------ */
 
 .services{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -197,13 +197,14 @@ p{
     padding-bottom: 20px;
 }
 .row a{
+    width: 46%;
     color: black;
     text-decoration: none;
     padding: 1%;
+    text-align: center;
+
 }
 .service-col{
-    height: 100%;
-    width: 100%;
     flex-basis: 18%;
     background: #d6e7fb;
     border-radius: 10px;
@@ -231,7 +232,8 @@ h3{
         justify-content: space-between;
     }
     .service-col{
-        width: 40%;
+        width: 100%;
+        margin-top: 4px;
         flex-basis: 48%;
 
     }
@@ -378,7 +380,14 @@ h3{
     margin: 5%;
     vertical-align: middle;
 }
+.tires-img{
+    width: 100%;
+}
 @media (max-width:700px) {
+    .tires-img{
+        margin-top: 20px;
+        width: 300%;
+    }
     .row{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -405,7 +414,7 @@ h3{
     }
 }
 
-/* ------------SKP----------- */
+/* -----------------------SKP---------------------- */
 
 .skp-header{
     min-height: 100vh;
@@ -535,6 +544,7 @@ h3{
     margin-top: 50px;
     background: #d6e7fb;
     border-radius: 30px;
+    padding: 20px;
 }
 .skp-interactive h2{
     color: black;
@@ -623,4 +633,121 @@ h3{
     .cennik-skp tr td{
         font-size: 16px;
     }
+}
+
+/* -----------------------OSK---------------------- */
+
+.osk-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(148, 175, 239, 0.7),rgba(4,9,30,0.7)),url(images/osk-bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.osk-info{
+    width: 80%;
+    background: #d6e7fb;
+    border-radius: 30px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 10px;
+}
+.osk-info p,h1{
+    text-align: center;
+}
+
+/* -----------------------CONTACT---------------------- */
+.contact-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(148, 175, 239, 0.7),rgba(4,9,30,0.7)),url(images/contact-bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+}
+input[type=email]{
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+}
+input[type=tel]{
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+}
+input[type=file]{
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    background-color: white;
+    resize: none;
+}
+input[type=submit] {
+    background-color: #325db9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #30a6e6;
+}
+.container {
+    border-radius: 5px;
+    background-color: #d6e7fb;
+    padding: 20px;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.contact h1{
+    font-size: 35px;
+    padding: 30px;
+}
+.contact-info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.map-row{
+    background-color: #d6e7fb;
+    padding: 100px;
+    margin: auto;
+    height: 400px;
+}
+.map-row h3{
+    font-size: 35px;
 }
