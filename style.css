@@ -681,6 +681,13 @@ h3{
     background-size: cover;
     position: relative;
 }
+.map-insite{
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.map-insite:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.84);
+}
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -690,6 +697,7 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical ;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.84);
 }
 input[type=email]{
     width: 100%; 
@@ -700,6 +708,7 @@ input[type=email]{
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical ;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.84);
 }
 input[type=tel]{
     width: 100%; 
@@ -710,6 +719,7 @@ input[type=tel]{
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical ;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.84);
 }
 input[type=file]{
     width: 100%; 
@@ -735,8 +745,8 @@ input[type=submit]:hover {
     background-color: #30a6e6;
 }
 .contact-form {
-    margin-top: 40px;
-    border-radius: 5px;
+    margin-top: 100px;
+    border-radius: 10px;
     background-color: #d6e7fb;
     padding: 20px;
 }
