@@ -633,6 +633,9 @@ h3{
     .cennik-skp tr td{
         font-size: 16px;
     }
+    .bg-car{
+        right: 0px;
+    }
 }
 
 /* -----------------------OSK---------------------- */
@@ -657,6 +660,14 @@ h3{
 }
 .osk-info p,h1{
     text-align: center;
+}
+@media (max-width:700px) {
+    .osk-info h1{
+        font-size: 21px;
+    }
+    .osk-info p{
+        font-size: 16px;
+    }
 }
 
 /* -----------------------CONTACT---------------------- */
@@ -750,4 +761,27 @@ input[type=submit]:hover {
 }
 .map-row h3{
     font-size: 35px;
+}
+@media (max-width:700px) {
+    .footer-col#on-page{
+        flex-basis: 100%;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    .contact-info h1{
+        font-size: 24px;
+        padding: 3px;
+    }
+    .map-row{
+        padding: 10px;
+        margin: auto;
+        height: 100%;
+    }
+    .map-row h3{
+        font-size: 21px;
+    }
+    .contact h1{
+        font-size: 24px;
+        padding: 13px;
+    }
 }
