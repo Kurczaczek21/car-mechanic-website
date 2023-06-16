@@ -749,12 +749,15 @@ input[type=submit]:hover {
     border-radius: 10px;
     background-color: #d6e7fb;
     padding: 20px;
+    width: 50%;
+    margin-left: 25%;
 }
 .contact{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 10px;
+    align-items: center;
 }
 .contact h1{
     font-size: 35px;
@@ -796,5 +799,9 @@ input[type=submit]:hover {
     .contact h1{
         font-size: 24px;
         padding: 13px;
+    }
+    .contact-form{
+        margin-left: unset;
+        width: 90%;
     }
 }
